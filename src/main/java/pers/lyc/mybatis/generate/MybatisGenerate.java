@@ -297,6 +297,7 @@ public class MybatisGenerate {
 		TransactionFactory transactionFactory = new JdbcTransactionFactory();
 		Environment environment = new Environment("development", transactionFactory, dataSource);
 		org.apache.ibatis.session.Configuration configuration = new org.apache.ibatis.session.Configuration(environment);
+		configuration.setMapUnderscoreToCamelCase(true);
 		configuration.addMapper(TableMapper.class);
 		SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(configuration);
 		SqlSession session = sqlSessionFactory.openSession();
