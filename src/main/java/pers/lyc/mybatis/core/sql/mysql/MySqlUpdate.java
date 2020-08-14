@@ -167,7 +167,7 @@ public class MySqlUpdate<T> extends SqlWhere {
 	 * @author 林运昌（linyunchang）
 	 * @since 2020年6月19日
 	 * @param fieldName 属性名称
-	 * @param expression 表达式，如：<BR/>
+	 * @param expression 表达式，如：<br>
 	 * 	&nbsp;&nbsp;&nbsp;&nbsp; version + 1
 	 * 	&nbsp;&nbsp;&nbsp;&nbsp; price + #{price}
 	 * @param value 值
