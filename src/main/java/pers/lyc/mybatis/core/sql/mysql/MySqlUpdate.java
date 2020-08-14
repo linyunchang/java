@@ -62,7 +62,7 @@ public class MySqlUpdate<T> extends SqlWhere {
 	 * 初始化
 	 * @author 林运昌（linyunchang）
 	 * @since 2020年6月19日
-	 * @param cls 表实体类型
+	 * @param tableCls 表实体类型
 	 */
 	public MySqlUpdate(Class<T> tableCls) {
 		Assert.notNull(tableCls, "表实体类型不能为空");
@@ -90,7 +90,6 @@ public class MySqlUpdate<T> extends SqlWhere {
 	 * @author 林运昌（linyunchang）
 	 * @since 2020年6月19日
 	 * @param data 最新数据对象
-	 * @param setNull 是否设置空值（true：设置空值；false：不设置空值）
 	 */
 	public MySqlUpdate<T> data(T data) {
 		return data(data, false);

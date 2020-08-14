@@ -12,7 +12,7 @@ import pers.lyc.mybatis.core.annotation.Column;
 public class ColumnCache implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
-	/** @Column */
+	/** Column注解对象 */
 	private Column column;
 	
 	/** 字段所属表别名 */

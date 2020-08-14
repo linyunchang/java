@@ -16,7 +16,7 @@ import pers.lyc.mybatis.core.enums.JoinType;
 public class JoinCache implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
-	/** @Join */
+	/** Join注解对象 */
 	private Join join;
 	
 	/** 关联表@Table */

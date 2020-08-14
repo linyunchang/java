@@ -15,7 +15,7 @@ import pers.lyc.mybatis.core.annotation.Table;
 public class TableCache implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
-	/** @Table */
+	/** Table注解对象 */
 	private Table table;
 	
 	/** 表对象 */

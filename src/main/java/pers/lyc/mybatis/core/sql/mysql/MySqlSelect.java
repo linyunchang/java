@@ -68,7 +68,7 @@ public class MySqlSelect<T> extends SqlWhere {
 	 * 初始化
 	 * @author 林运昌（linyunchang）
 	 * @since 2020年6月19日
-	 * @param cls 表实体类型
+	 * @param tableCls 表实体类型
 	 */
 	public MySqlSelect(Class<T> tableCls) {
 		Assert.notNull(tableCls, "表实体类型不能为空");

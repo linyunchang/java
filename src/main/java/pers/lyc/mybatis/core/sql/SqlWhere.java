@@ -42,8 +42,7 @@ public abstract class SqlWhere {
 	 * 添加关联关系
 	 * @author 林运昌（linyunchang）
 	 * @since 2020年6月19日
-	 * @param relatedField 关联属性
-	 * @return 
+	 * @param relatedField 关联属性 
 	 */
 	protected abstract void joinRelated(String relatedField);
 	
@@ -53,7 +52,7 @@ public abstract class SqlWhere {
 	 * @since 2020年6月19日
 	 * @param sql 条件语句
 	 * @param field 条件语句中涉及到的属性名称
-	 * @example 
+	 * @apiNote 
 	 * 	sql： birthday is null； field：birthday<br>
 	 * 	sql： birthday is not null； field：birthday<br>
 	 */
@@ -70,10 +69,10 @@ public abstract class SqlWhere {
 	 * @param sql 条件语句
 	 * @param field 条件语句中涉及到的属性名称
 	 * @param value 条件语句中涉及到的属性的值
-	 * @example 
+	 * @apiNote 
 	 * 	sql： id = #{id}； field：id； value：1<br>
 	 * 	sql： name like concat('%', #{name},'%')； field：name； value："林运昌"<br>
-	 * 	sql： type in &lt;foreach>type&lt;/foreach>； field：type； value：Integer[] or List<Integer><br>
+	 * 	sql： type in &lt;foreach&gt;type&lt;/foreach&gt;； field：type； value：Integer[] or List&lt;Integer&gt;<br>
 	 * 	sql： birthday is null； field：birthday； value：null<br>
 	 * 	sql： birthday is not null； field：birthday； value：null<br>
 	 */
@@ -99,10 +98,10 @@ public abstract class SqlWhere {
 	 * @param sql 条件语句
 	 * @param fields 条件语句中涉及到的属性名称数组
 	 * @param paramMap 条件语句中涉及到的参数值map
-	 * @example 
+	 * @apiNote 
 	 * 	sql： id = #{id}； fields：[id]； paramMap：{id:1}<br>
 	 *  sql： name like concat('%', #{name},'%')； fields：[name]； paramMap：{name:"林运昌"}<br>
-	 * 	sql： type in &lt;foreach>type&lt;/foreach>； fields：[type]； paramMap：{type:[1,2,3]}<br>
+	 * 	sql： type in &lt;foreach&gt;type&lt;/foreach&gt;； fields：[type]； paramMap：{type:[1,2,3]}<br>
 	 * 	sql： birthday is null； fields：[birthday]； paramMap：{}<br>
 	 * 	sql： birthday is not null； fields：[birthday]； paramMap：{}<br>
 	 */
@@ -128,7 +127,7 @@ public abstract class SqlWhere {
 	 * @since 2020年6月19日
 	 * @param sql 条件语句
 	 * @param field field
-	 * @example 
+	 * @apiNote 
 	 * 	sql： birthday is null； field：birthday<br>
 	 * 	sql： birthday is not null； field：birthday<br>
 	 */
@@ -145,10 +144,10 @@ public abstract class SqlWhere {
 	 * @param sql 条件语句
 	 * @param field field
 	 * @param value value
-	 * @example 
+	 * @apiNote 
 	 * 	sql： id = #{id}； field：id； value：1<br>
 	 * 	sql： name like concat('%', #{name},'%')； field：name； value："you name"<br>
-	 * 	sql： type in &lt;foreach>type&lt;/foreach>； field：type； value：Integer[] or List<Integer><br>
+	 * 	sql： type in &lt;foreach&gt;type&lt;/foreach&gt;； field：type； value：Integer[] or List&lt;Integer&gt;<br>
 	 * 	sql： birthday is null； field：birthday； value：null<br>
 	 * 	sql： birthday is not null； field：birthday； value：null<br>
 	 */
@@ -174,10 +173,10 @@ public abstract class SqlWhere {
 	 * @param sql 条件语句
 	 * @param fields 条件语句中涉及到的属性名称数组
 	 * @param paramMap 条件语句中涉及到的参数值map
-	 * @example 
+	 * @apiNote 
 	 * 	id = #{id} <br>
 	 * 	name like concat('%', #{name},'%') <br>
-	 * 	type in &lt;foreach>type&lt;/foreach> <br>
+	 * 	type in &lt;foreach&gt;type&lt;/foreach&gt; <br>
 	 * 	birthday is null <br>
 	 * 	birthday is not null <br>
 	 */
@@ -310,7 +309,7 @@ public abstract class SqlWhere {
 	}
 	
 	/** 
-	 * 限制 field <= value
+	 * 限制 field &lt;= value
 	 * @author 林运昌（linyunchang）
 	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
@@ -326,7 +325,7 @@ public abstract class SqlWhere {
 	}
 	
 	/** 
-	 * 限制 field > value
+	 * 限制 field &gt; value
 	 * @author 林运昌（linyunchang）
 	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
@@ -570,7 +569,7 @@ public abstract class SqlWhere {
 	}
 	
 	/** 
-	 * 或者 field <= value
+	 * 或者 field &lt;= value
 	 * @author 林运昌（linyunchang）
 	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
@@ -586,7 +585,7 @@ public abstract class SqlWhere {
 	}
 	
 	/** 
-	 * 或者 field > value
+	 * 或者 field &gt; value
 	 * @author 林运昌（linyunchang）
 	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称

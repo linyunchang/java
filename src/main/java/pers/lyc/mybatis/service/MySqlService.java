@@ -94,7 +94,7 @@ public class MySqlService<T> {
 	 * @since 2020年6月20日
 	 * @param sql 数据查询语句
 	 * @param pageNo 页码
-	 * @param pageSize 每页数据量
+	 * @param limit 查询数量
 	 * @return 
 	 */
 	public Page<T> selectPage(MySqlSelect<T> sql, Integer pageNo, Integer limit) {
@@ -118,7 +118,7 @@ public class MySqlService<T> {
 	 * 批量新增数据
 	 * @author 林运昌（linyunchang）
 	 * @since 2020年6月20日
-	 * @param dataList 待新增数据列表
+	 * @param sql 新增语句
 	 * @return 
 	 */
 	@Transactional

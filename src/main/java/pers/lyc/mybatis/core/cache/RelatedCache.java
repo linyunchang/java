@@ -12,7 +12,7 @@ import pers.lyc.mybatis.core.annotation.Related;
 public class RelatedCache implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
-	/** @Related */
+	/** Related注解对象 */
 	private Related related;
 	
 	/** 关系表别名 */
