@@ -50,10 +50,8 @@ public abstract class SqlWhere {
 	 * 添加and条件，属性前后需要有空格
 	 * @author 林运昌（linyunchang）
 	 * @since 2020年6月19日
-	 * @param sql 条件语句
-	 * @param field 条件语句中涉及到的属性名称
-	 * @see sql： birthday is null； field：birthday<br>
-	 * @see sql： birthday is not null； field：birthday<br>
+	 * @param sql 条件语句，如： birthday is null
+	 * @param field 条件语句中涉及到的属性名称，如：birthday
 	 */
 	public SqlWhere and(String sql, String field) {
 		and(sql, field, null);
@@ -65,14 +63,9 @@ public abstract class SqlWhere {
 	 * 添加and条件，属性前后需要有空格
 	 * @author 林运昌（linyunchang）
 	 * @since 2020年6月19日
-	 * @param sql 条件语句
-	 * @param field 条件语句中涉及到的属性名称
-	 * @param value 条件语句中涉及到的属性的值
-	 * @see sql： id = #{id}； field：id； value：1<br>
-	 * @see sql： name like concat('%', #{name},'%')； field：name； value："林运昌"<br>
-	 * @see sql： type in &lt;foreach&gt;type&lt;/foreach&gt;； field：type； value：Integer[] or List&lt;Integer&gt;<br>
-	 * @see sql： birthday is null； field：birthday； value：null<br>
-	 * @see sql： birthday is not null； field：birthday； value：null<br>
+	 * @param sql 条件语句，如： type in &lt;foreach&gt;type&lt;/foreach&gt;
+	 * @param field 条件语句中涉及到的属性名称，如：type
+	 * @param value 条件语句中涉及到的属性的值，如：Integer[] 或 List&lt;Integer&gt;
 	 */
 	public SqlWhere and(String sql, String field, Object value) {
 		Assert.hasLength(sql, "sql不能为空");
@@ -93,14 +86,9 @@ public abstract class SqlWhere {
 	 * 添加and条件，属性前后需要有空格
 	 * @author 林运昌（linyunchang）
 	 * @since 2020年6月19日
-	 * @param sql 条件语句
-	 * @param fields 条件语句中涉及到的属性名称数组
-	 * @param paramMap 条件语句中涉及到的参数值map
-	 * @see sql： id = #{id}； fields：[id]； paramMap：{id:1}<br>
-	 * @see sql： name like concat('%', #{name},'%')； fields：[name]； paramMap：{name:"林运昌"}<br>
-	 * @see sql： type in &lt;foreach&gt;type&lt;/foreach&gt;； fields：[type]； paramMap：{type:[1,2,3]}<br>
-	 * @see sql： birthday is null； fields：[birthday]； paramMap：{}<br>
-	 * @see sql： birthday is not null； fields：[birthday]； paramMap：{}<br>
+	 * @param sql 条件语句，如： type in &lt;foreach&gt;type&lt;/foreach&gt;
+	 * @param fields 条件语句中涉及到的属性名称数组，如：[type]
+	 * @param paramMap 条件语句中涉及到的参数值map，如：{type:[1,2,3]}
 	 */
 	public SqlWhere and(String sql, String[] fields, Map<String, Object> paramMap) {
 		Assert.hasLength(sql, "sql不能为空");
@@ -122,10 +110,8 @@ public abstract class SqlWhere {
 	 * 添加or条件，属性前后需要有空格
 	 * @author 林运昌（linyunchang）
 	 * @since 2020年6月19日
-	 * @param sql 条件语句
-	 * @param field field
-	 * @see sql： birthday is null； field：birthday<br>
-	 * @see sql： birthday is not null； field：birthday<br>
+	 * @param sql 条件语句，如： birthday is null
+	 * @param field field，如：birthday
 	 */
 	public SqlWhere or(String sql, String field) {
 		or(sql, field, null);
@@ -137,14 +123,9 @@ public abstract class SqlWhere {
 	 * 添加or条件，属性前后需要有空格
 	 * @author 林运昌（linyunchang）
 	 * @since 2020年6月19日
-	 * @param sql 条件语句
-	 * @param field field
-	 * @param value value
-	 * @see sql： id = #{id}； field：id； value：1<br>
-	 * @see sql： name like concat('%', #{name},'%')； field：name； value："you name"<br>
-	 * @see sql： type in &lt;foreach&gt;type&lt;/foreach&gt;； field：type； value：Integer[] or List&lt;Integer&gt;<br>
-	 * @see sql： birthday is null； field：birthday； value：null<br>
-	 * @see sql： birthday is not null； field：birthday； value：null<br>
+	 * @param sql 条件语句，如： type in &lt;foreach&gt;type&lt;/foreach&gt;
+	 * @param field field，如：type
+	 * @param value value，如：Integer[] 或 List&lt;Integer&gt;
 	 */
 	public SqlWhere or(String sql, String field, Object value) {
 		Assert.hasLength(sql, "sql不能为空");
@@ -165,14 +146,9 @@ public abstract class SqlWhere {
 	 * 添加or条件，属性前后需要有空格
 	 * @author 林运昌（linyunchang）
 	 * @since 2020年6月19日
-	 * @param sql 条件语句
-	 * @param fields 条件语句中涉及到的属性名称数组
-	 * @param paramMap 条件语句中涉及到的参数值map
-	 * @see id = #{id} <br>
-	 * @see name like concat('%', #{name},'%') <br>
-	 * @see type in &lt;foreach&gt;type&lt;/foreach&gt; <br>
-	 * @see birthday is null <br>
-	 * @see birthday is not null <br>
+	 * @param sql 条件语句，如： type in &lt;foreach&gt;type&lt;/foreach&gt;
+	 * @param fields 条件语句中涉及到的属性名称数组，如：[type]
+	 * @param paramMap 条件语句中涉及到的参数值map，如：{type:[1,2,3]}
 	 */
 	public SqlWhere or(String sql, String[] fields, Map<String, Object> paramMap) {
 		Assert.hasLength(sql, "sql不能为空");
