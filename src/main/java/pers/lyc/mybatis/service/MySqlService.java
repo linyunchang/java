@@ -17,7 +17,7 @@ import pers.lyc.mybatis.core.sql.mysql.MySqlUpdate;
 /**
  * MySqlService，建议项目中创建一个BaseService继承此service，其他service继承BaseService。以后如果切换项目使用的数据库，直接修改BaseService继承的service即可
  * @author 林运昌（linyunchang）
- * @date 2020年6月20日
+ * @since 2020年6月20日
  */
 public class MySqlService<T> {
 	
@@ -27,9 +27,9 @@ public class MySqlService<T> {
 	/**
 	 * 单条数据查询
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月20日
+	 * @since 2020年6月20日
 	 * @param sql 数据查询语句
-	 * @return
+	 * @return 
 	 */
 	public T selectOne(MySqlSelect<T> sql) {
 		Assert.notNull(sql, "查询语句不能为空");
@@ -43,9 +43,9 @@ public class MySqlService<T> {
 	/**
 	 * 单字段查询
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月20日
+	 * @since 2020年6月20日
 	 * @param sql 数据查询语句
-	 * @return
+	 * @return 
 	 */
 	public <C> List<C> selectColumn(MySqlSelect<T> sql) {
 		Assert.notNull(sql, "查询语句不能为空");
@@ -59,9 +59,9 @@ public class MySqlService<T> {
 	/**
 	 * 数据数量统计
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月20日
+	 * @since 2020年6月20日
 	 * @param sql 数据查询语句
-	 * @return
+	 * @return 
 	 */
 	public int count(MySqlSelect<T> sql) {
 		Assert.notNull(sql, "查询语句不能为空");
@@ -75,9 +75,9 @@ public class MySqlService<T> {
 	/**
 	 * 数据列表查询
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月20日
+	 * @since 2020年6月20日
 	 * @param sql 数据查询语句
-	 * @return
+	 * @return 
 	 */
 	public List<T> select(MySqlSelect<T> sql) {
 		Assert.notNull(sql, "查询语句不能为空");
@@ -91,11 +91,11 @@ public class MySqlService<T> {
 	/**
 	 * 分页查询
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月20日
+	 * @since 2020年6月20日
 	 * @param sql 数据查询语句
 	 * @param pageNo 页码
 	 * @param pageSize 每页数据量
-	 * @return
+	 * @return 
 	 */
 	public Page<T> selectPage(MySqlSelect<T> sql, Integer pageNo, Integer limit) {
 		Assert.notNull(sql, "查询语句不能为空");
@@ -117,9 +117,9 @@ public class MySqlService<T> {
 	/**
 	 * 批量新增数据
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月20日
+	 * @since 2020年6月20日
 	 * @param dataList 待新增数据列表
-	 * @return
+	 * @return 
 	 */
 	@Transactional
 	public int insert(MySqlInsert<T> sql) {
@@ -129,10 +129,10 @@ public class MySqlService<T> {
 	/**
 	 * 新增数据
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月20日
+	 * @since 2020年6月20日
 	 * @param sql 数据新增语句
 	 * @param maxCount 每次最大新增数据数量
-	 * @return
+	 * @return 
 	 */
 	@Transactional
 	public int insert(MySqlInsert<T> sql, int maxCount) {
@@ -180,9 +180,9 @@ public class MySqlService<T> {
 	/**
 	 * 数据更新
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月20日
+	 * @since 2020年6月20日
 	 * @param sql 数据更新语句
-	 * @return
+	 * @return 
 	 */
 	@Transactional
 	public int update(MySqlUpdate<T> sql) {
@@ -197,9 +197,9 @@ public class MySqlService<T> {
 	/**
 	 * 数据删除
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月20日
+	 * @since 2020年6月20日
 	 * @param sql 数据删除语句
-	 * @return
+	 * @return 
 	 */
 	@Transactional
 	public int delete(MySqlDelete<T> sql) {

@@ -16,16 +16,16 @@ import pers.lyc.mybatis.core.annotation.Table;
 /**
  * mybatis工具类
  * @author 林运昌（linyunchang）
- * @date 2020年6月18日
+ * @since 2020年6月18日
  */
 public class MybatisUtil {
 	
 	/**
 	 * 获取表名
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月18日
+	 * @since 2020年6月18日
 	 * @param cls 表对象类型
-	 * @return
+	 * @return 
 	 */
 	public static String getTableName(Class<?> cls) {
 		Assert.notNull(cls, "Class 不能为空");
@@ -39,10 +39,10 @@ public class MybatisUtil {
 	/**
 	 * 获取表名
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月18日
+	 * @since 2020年6月18日
 	 * @param cls 表对象类型
 	 * @param table 表注解
-	 * @return
+	 * @return 
 	 */
 	public static String getTableName(Class<?> cls, Table table) {
 		Assert.notNull(cls, "Class 不能为空");
@@ -63,9 +63,9 @@ public class MybatisUtil {
 	/**
 	 * 根据Field获取列名
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月18日
+	 * @since 2020年6月18日
 	 * @param field 属性
-	 * @return
+	 * @return 
 	 */
 	public static String getColumnName(Field field) {
 		Assert.notNull(field, "Field 不能为空");
@@ -79,10 +79,10 @@ public class MybatisUtil {
 	/**
 	 * 根据Field获取列名
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月18日
+	 * @since 2020年6月18日
 	 * @param field 属性
 	 * @param column 列注释
-	 * @return
+	 * @return 
 	 */
 	public static String getColumnName(Field field, Column column) {
 		Assert.notNull(column, "@Column 不能为空");
@@ -103,9 +103,9 @@ public class MybatisUtil {
 	/**
 	 * 根据名称获取别名
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月18日
+	 * @since 2020年6月18日
 	 * @param name 要获取别名的名称
-	 * @return
+	 * @return 
 	 */
 	public static String getAliasName(String name) {
 		Assert.hasLength(name, "名称不能为空");
@@ -116,9 +116,9 @@ public class MybatisUtil {
 	/**
 	 * 驼峰转下划线
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月18日
+	 * @since 2020年6月18日
 	 * @param str 要进行转换的字符
-	 * @return
+	 * @return 
 	 */
 	public static String camelToUnder(String str) {
 		Assert.hasLength(str, "字符串不能为空");
@@ -129,9 +129,9 @@ public class MybatisUtil {
 	/**
 	 * 下划线转驼峰
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月18日
+	 * @since 2020年6月18日
 	 * @param str 要进行转换的字符
-	 * @return
+	 * @return 
 	 */
 	public static String underToCamel(String str) {
 		Assert.hasLength(str, "字符串不能为空");
@@ -142,9 +142,9 @@ public class MybatisUtil {
 	/**
 	 * 驼峰转短横线分隔
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月18日
+	 * @since 2020年6月18日
 	 * @param str 要进行转换的字符
-	 * @return
+	 * @return 
 	 */
 	public static String camelToKebab(String str) {
 		Assert.hasLength(str, "字符串不能为空");
@@ -155,9 +155,9 @@ public class MybatisUtil {
 	/**
 	 * 短横线分隔转驼峰
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月18日
+	 * @since 2020年6月18日
 	 * @param str 要进行转换的字符
-	 * @return
+	 * @return 
 	 */
 	public static String kebabToCamel(String str) {
 		Assert.hasLength(str, "字符串不能为空");
@@ -168,10 +168,10 @@ public class MybatisUtil {
 	/**
 	 * 驼峰转分隔符
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月18日
+	 * @since 2020年6月18日
 	 * @param str 要进行转换的字符
 	 * @param separator 分隔符
-	 * @return
+	 * @return 
 	 */
 	public static String camelToSeparator(String str, char separator) {
 		Assert.hasLength(str, "字符串不能为空");
@@ -198,10 +198,10 @@ public class MybatisUtil {
 	/**
 	 * 分隔符转驼峰
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月18日
+	 * @since 2020年6月18日
 	 * @param str 要进行转换的字符
 	 * @param separator 分隔符
-	 * @return
+	 * @return 
 	 */
 	public static String separatorToCamel(String str, char separator) {
 		Assert.hasLength(str, "字符串不能为空");
@@ -243,9 +243,9 @@ public class MybatisUtil {
 	/**
 	 * 字符串首字母小写
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月18日
+	 * @since 2020年6月18日
 	 * @param str 要转换成首字母小写的字符串
-	 * @return
+	 * @return 
 	 */
 	public static String firstCharToLower(String str) {
 		Assert.hasLength(str, "待转换字符串不能为空");
@@ -262,9 +262,9 @@ public class MybatisUtil {
 	/**
 	 * 字符串首字母大写
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月18日
+	 * @since 2020年6月18日
 	 * @param str 要转换成首字母大写的字符串
-	 * @return
+	 * @return 
 	 */
 	public static String firstCharToUpper(String str) {
 		Assert.hasLength(str, "待转换字符串不能为空");
@@ -281,9 +281,9 @@ public class MybatisUtil {
 	/**
 	 * javaBean转换成map
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月18日
+	 * @since 2020年6月18日
 	 * @param value 进行转换的对象
-	 * @return
+	 * @return 
 	 */
 	public static Map<String, Object> toMap(Object value) {
 		Assert.notNull(value, "进行转换的对象不能为空");
@@ -294,10 +294,10 @@ public class MybatisUtil {
 	/**
 	 * javaBean转换成map
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月18日
+	 * @since 2020年6月18日
 	 * @param valueObj 进行转换的对象
 	 * @param hasNull 是否拥有空值
-	 * @return
+	 * @return 
 	 */
 	public static Map<String, Object> toMap(Object valueObj, boolean hasNull) {
 		Assert.notNull(valueObj, "进行转换的对象不能为空");

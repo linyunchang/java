@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * 分页数据
  * @author 林运昌（linyunchang）
- * @date 2020年6月19日
+ * @since 2020年6月19日
  */
 public class Page<T> implements Serializable {
 	private static final long serialVersionUID = 1L;

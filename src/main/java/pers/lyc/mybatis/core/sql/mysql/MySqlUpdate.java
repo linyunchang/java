@@ -23,7 +23,7 @@ import pers.lyc.mybatis.util.TableCacheUtil;
 /**
  * mysql更新语句
  * @author 林运昌（linyunchang）
- * @date 2020年6月19日
+ * @since 2020年6月19日
  */
 public class MySqlUpdate<T> extends SqlWhere {
 	/** 表实体类型 */
@@ -40,7 +40,7 @@ public class MySqlUpdate<T> extends SqlWhere {
 	/**
 	 * 初始化
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 */
 	public MySqlUpdate() {
 		// 判断类型
@@ -61,7 +61,7 @@ public class MySqlUpdate<T> extends SqlWhere {
 	/**
 	 * 初始化
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param cls 表实体类型
 	 */
 	public MySqlUpdate(Class<T> tableCls) {
@@ -73,9 +73,9 @@ public class MySqlUpdate<T> extends SqlWhere {
 	/**
 	 * 自定义要更新数据的表（对应数据库的表名）
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param tableName 自定义要更新数据的表名（对应数据库的表名）
-	 * @return
+	 * @return 
 	 */
 	public MySqlUpdate<T> update(String tableName) {
 		Assert.hasLength(tableName, "自定义要更新数据的表不能为空");
@@ -88,7 +88,7 @@ public class MySqlUpdate<T> extends SqlWhere {
 	/**
 	 * 设置最新数据对象
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param data 最新数据对象
 	 * @param setNull 是否设置空值（true：设置空值；false：不设置空值）
 	 */
@@ -99,7 +99,7 @@ public class MySqlUpdate<T> extends SqlWhere {
 	/**
 	 * 设置最新数据对象
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param data 最新数据对象
 	 * @param setNull 是否设置空值（true：设置空值；false：不设置空值）
 	 */
@@ -144,7 +144,7 @@ public class MySqlUpdate<T> extends SqlWhere {
 	/**
 	 * 设置待更新值
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param fieldName 属性名称
 	 * @param value 值
 	 */
@@ -165,7 +165,7 @@ public class MySqlUpdate<T> extends SqlWhere {
 	/**
 	 * 设置待更新值
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param fieldName 属性名称
 	 * @param expression 表达式，如：<BR/>
 	 * 	&nbsp;&nbsp;&nbsp;&nbsp; version + 1

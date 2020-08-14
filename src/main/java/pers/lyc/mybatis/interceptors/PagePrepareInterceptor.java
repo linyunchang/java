@@ -28,7 +28,7 @@ import cn.hutool.core.util.ReflectUtil;
 /**
  * mybatis分页拦截器（查询数据总数并保存到page中）
  * @author 林运昌（linyunchang）
- * @date 2020年6月20日
+ * @since 2020年6月20日
  */
 @Intercepts({ @Signature( type=StatementHandler.class, method="prepare", args={Connection.class, Integer.class} ) })
 public class PagePrepareInterceptor implements Interceptor {
@@ -67,7 +67,7 @@ public class PagePrepareInterceptor implements Interceptor {
 	/**
 	 * 执行数据总数查询业务逻辑
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月20日
+	 * @since 2020年6月20日
 	 * @param connection
 	 * @param mappedStatement
 	 * @param page
@@ -108,9 +108,9 @@ public class PagePrepareInterceptor implements Interceptor {
 	/**
 	 * 获取分页查询语句
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月20日
+	 * @since 2020年6月20日
 	 * @param sql
-	 * @return
+	 * @return 
 	 */
 	public String getCountSql(String sql) {
 		// 创建新的sql语句
@@ -136,7 +136,7 @@ public class PagePrepareInterceptor implements Interceptor {
 	/**
 	 * 分页语句处理
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月20日
+	 * @since 2020年6月20日
 	 * @param boundSql
 	 * @param page
 	 */
@@ -149,7 +149,7 @@ public class PagePrepareInterceptor implements Interceptor {
 	/**
 	 * mysql分页语句处理
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月20日
+	 * @since 2020年6月20日
 	 * @param boundSql
 	 * @param page
 	 */

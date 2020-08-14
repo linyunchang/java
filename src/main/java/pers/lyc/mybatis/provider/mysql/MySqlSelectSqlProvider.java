@@ -9,17 +9,17 @@ import pers.lyc.mybatis.core.sql.mysql.MySqlSelect;
 /**
  * MySql数据查询SqlProvider
  * @author 林运昌（linyunchang）
- * @date 2020年6月19日
+ * @since 2020年6月19日
  */
 public class MySqlSelectSqlProvider implements ProviderMethodResolver {
 	
 	/**
 	 * 单条数据查询
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param context ProviderContext
 	 * @param sql 数据查询语句
-	 * @return
+	 * @return 
 	 */
 	public static String selectOne(ProviderContext context, MySqlSelect<?> sql) {
 		Assert.notNull(sql, "查询语句不能为空");
@@ -30,10 +30,10 @@ public class MySqlSelectSqlProvider implements ProviderMethodResolver {
 	/**
 	 * 单字段数据查询
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param context ProviderContext
 	 * @param sql 数据查询语句
-	 * @return
+	 * @return 
 	 */
 	public static String selectColumn(ProviderContext context, MySqlSelect<?> sql) {
 		Assert.notNull(sql, "查询语句不能为空");
@@ -48,10 +48,10 @@ public class MySqlSelectSqlProvider implements ProviderMethodResolver {
 	/**
 	 * 数据数量统计
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param context ProviderContext
 	 * @param sql 数据查询语句
-	 * @return
+	 * @return 
 	 */
 	public static String count(ProviderContext context, MySqlSelect<?> sql) {
 		Assert.notNull(sql, "统计语句不能为空");
@@ -74,10 +74,10 @@ public class MySqlSelectSqlProvider implements ProviderMethodResolver {
 	/**
 	 * 数据列表查询
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param context ProviderContext
 	 * @param sql 数据查询语句
-	 * @return
+	 * @return 
 	 */
 	public static String select(ProviderContext context, MySqlSelect<?> sql) {
 		Assert.notNull(sql, "查询语句不能为空");

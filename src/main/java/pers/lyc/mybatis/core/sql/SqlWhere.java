@@ -17,7 +17,7 @@ import pers.lyc.mybatis.core.cache.TableCache;
 /**
  * sql where语句
  * @author 林运昌（linyunchang）
- * @date 2020年6月19日
+ * @since 2020年6月19日
  */
 public abstract class SqlWhere {
 	
@@ -33,24 +33,24 @@ public abstract class SqlWhere {
 	/**
 	 * 获取表缓存信息，由具体子类实现
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
-	 * @return
+	 * @since 2020年6月19日
+	 * @return 
 	 */
 	protected abstract TableCache getTableCache();
 	
 	/**
 	 * 添加关联关系
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param relatedField 关联属性
-	 * @return
+	 * @return 
 	 */
 	protected abstract void joinRelated(String relatedField);
 	
 	/**
 	 * 添加and条件，属性前后需要有空格
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param sql 条件语句
 	 * @param field 条件语句中涉及到的属性名称
 	 * @example 
@@ -66,7 +66,7 @@ public abstract class SqlWhere {
 	/**
 	 * 添加and条件，属性前后需要有空格
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param sql 条件语句
 	 * @param field 条件语句中涉及到的属性名称
 	 * @param value 条件语句中涉及到的属性的值
@@ -95,7 +95,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 添加and条件，属性前后需要有空格
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param sql 条件语句
 	 * @param fields 条件语句中涉及到的属性名称数组
 	 * @param paramMap 条件语句中涉及到的参数值map
@@ -125,7 +125,7 @@ public abstract class SqlWhere {
 	/**
 	 * 添加or条件，属性前后需要有空格
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param sql 条件语句
 	 * @param field field
 	 * @example 
@@ -141,7 +141,7 @@ public abstract class SqlWhere {
 	/**
 	 * 添加or条件，属性前后需要有空格
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param sql 条件语句
 	 * @param field field
 	 * @param value value
@@ -170,7 +170,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 添加or条件，属性前后需要有空格
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param sql 条件语句
 	 * @param fields 条件语句中涉及到的属性名称数组
 	 * @param paramMap 条件语句中涉及到的参数值map
@@ -200,7 +200,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 限制 field=value
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 * @param value	值
 	 */
@@ -216,7 +216,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 限制 field!=value
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 * @param value	值
 	 */
@@ -232,7 +232,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 限制 field like %value%
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 * @param value	值
 	 */
@@ -248,7 +248,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 限制 field not like %value%
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 * @param value	值
 	 */
@@ -264,7 +264,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 限制 field in value
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 * @param value	值（数组或list）
 	 */
@@ -280,7 +280,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 限制 field not in value
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 * @param value	值（数组或list）
 	 */
@@ -296,7 +296,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 限制 field < value
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 * @param value	值
 	 */
@@ -312,7 +312,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 限制 field <= value
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 * @param value	值
 	 */
@@ -328,7 +328,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 限制 field > value
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 * @param value	值
 	 */
@@ -344,7 +344,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 限制 field >= value
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 * @param value	值
 	 */
@@ -360,7 +360,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 限制 field在startValue和endValue之间
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 * @param startValue 开始值
 	 * @param endValue 结束值
@@ -380,7 +380,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 限制 field不在startValue和endValue之间
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 * @param startValue 开始值
 	 * @param endValue 结束值
@@ -400,7 +400,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 限制属性为空
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 */
 	public SqlWhere andIsNull(String field) {
@@ -415,7 +415,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 限制属性为空或空字符串
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 */
 	public SqlWhere andIsNullOrEmpty(String field) {
@@ -430,7 +430,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 限制属性不为空
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 */
 	public SqlWhere andIsNotNull(String field) {
@@ -445,7 +445,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 限制属性不为空值和空字符串
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 */
 	public SqlWhere andIsNotNullAndNotEmpty(String field) {
@@ -460,7 +460,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 或者 field = value
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 * @param value	值
 	 */
@@ -476,7 +476,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 或者 field != value
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 * @param value	值
 	 */
@@ -492,7 +492,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 或者 field like %value% 
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 * @param value	值
 	 */
@@ -508,7 +508,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 或者 field not like %value% 
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 * @param value	值
 	 */
@@ -524,7 +524,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 或者 field in value
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 * @param value	值（数组或list）
 	 */
@@ -540,7 +540,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 或者 field not in value
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 * @param value	值（数组或list）
 	 */
@@ -556,7 +556,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 或者 field < value
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 * @param value	值
 	 */
@@ -572,7 +572,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 或者 field <= value
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 * @param value	值
 	 */
@@ -588,7 +588,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 或者 field > value
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 * @param value	值
 	 */
@@ -604,7 +604,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 或者 field >= value
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 * @param value	值
 	 */
@@ -620,7 +620,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 或者 field在startValue和startValue之间
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 * @param startValue 开始值
 	 * @param endValue 结束值
@@ -640,7 +640,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 或者 field不在startValue和startValue之间
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 * @param startValue 开始值
 	 * @param endValue 结束值
@@ -660,7 +660,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 或者field为空
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 */
 	public SqlWhere orIsNull(String field) {
@@ -675,7 +675,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 或者 field为空或空字符串
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 */
 	public SqlWhere orIsNullOrEmpty(String field) {
@@ -690,7 +690,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 或者field不为空
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 */
 	public SqlWhere orIsNotNull(String field) {
@@ -705,7 +705,7 @@ public abstract class SqlWhere {
 	/** 
 	 * 或者 field不为空和空字符串
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
 	 */
 	public SqlWhere orIsNotNullAndNotEmpty(String field) {
@@ -720,7 +720,7 @@ public abstract class SqlWhere {
 	/**
 	 * 渲染属性
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param sql 待渲染field的sql
 	 * @param isFullName 是否添加表别名前缀
 	 * @return 
@@ -757,7 +757,7 @@ public abstract class SqlWhere {
 	/**
 	 * 渲染属性
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param sql 待渲染field的sql
 	 * @param field 要渲染的属性名
 	 * @param isFullName 是否添加表别名前缀
@@ -791,7 +791,7 @@ public abstract class SqlWhere {
 	/**
 	 * 渲染属性
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param sql 待渲染field的sql
 	 * @param columnCache 字段缓存信息
 	 * @param isFullName 是否添加表别名前缀
@@ -821,7 +821,7 @@ public abstract class SqlWhere {
 	/**
 	 * 渲染属性
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param sql 待渲染field的sql
 	 * @param relatedCache 关系字段缓存信息
 	 * @param isFullName 是否添加表别名前缀
@@ -854,7 +854,7 @@ public abstract class SqlWhere {
 	/**
 	 * 渲染参数
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param sql 待渲染的sql语句
 	 * @return 渲染完毕的sql语句
 	 */

@@ -11,7 +11,7 @@ import pers.lyc.mybatis.core.enums.JoinType;
 /**
  * 关联缓存
  * @author 林运昌（linyunchang）
- * @date 2020年6月19日
+ * @since 2020年6月19日
  */
 public class JoinCache implements Serializable {
 	private static final long serialVersionUID = 1L;

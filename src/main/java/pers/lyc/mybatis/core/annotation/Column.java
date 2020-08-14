@@ -6,10 +6,9 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * 字段注解，自动生成表时该注解会在表中生成对应的列，可配合@Join使用
+ * 字段注解，自动生成表时该注解会在表中生成对应的列，可配合@Join使用，不能和@Related一起使用，否则会使@Related失效
  * @author 林运昌（linyunchang）
- * @date 2020年6月19日
- * @notice 该注解不能和@Related一起使用，否则会使@Related失效
+ * @since 2020年6月19日
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)

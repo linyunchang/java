@@ -35,14 +35,14 @@ import pers.lyc.mybatis.util.TableCacheUtil;
 /**
  * mybatis代码自动生成，请使用3.5.4以上版本的mybatis
  * @author 林运昌（linyunchang）
- * @date 2020年6月22日
+ * @since 2020年6月22日
  */
 public class MybatisGenerate {
 	
 	/**
 	 * 创建文件，如果文件已存在，则不创建
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月22日
+	 * @since 2020年6月22日
 	 * @param author 作者信息
 	 * @param ftlFileName 模板文件名
 	 * @param generatePath 文件生成路径
@@ -62,7 +62,7 @@ public class MybatisGenerate {
 	/**
 	 * 创建文件，如果文件已存在，则不创建
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月22日
+	 * @since 2020年6月22日
 	 * @param author 作者信息
 	 * @param ftlFileName 模板文件名
 	 * @param generatePath 文件生成路径
@@ -77,7 +77,7 @@ public class MybatisGenerate {
 	/**
 	 * 创建文件，如果文件已存在，则不创建
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月22日
+	 * @since 2020年6月22日
 	 * @param author 作者信息
 	 * @param ftlFileName 模板文件名
 	 * @param generatePath 文件生成路径
@@ -98,7 +98,7 @@ public class MybatisGenerate {
 	/**
 	 * 创建文件，如果文件已存在，则不创建
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月22日
+	 * @since 2020年6月22日
 	 * @param author 作者信息
 	 * @param ftlFileName 模板文件名
 	 * @param generatePath 文件生成路径
@@ -166,9 +166,9 @@ public class MybatisGenerate {
 	/**
 	 * 创建ftl配置信息
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月22日
+	 * @since 2020年6月22日
 	 * @param ftlDirectory ftl文件保存路径
-	 * @return
+	 * @return 
 	 */
 	public static Configuration newFtlConfig(String ftlDirectory) {
 		// ftl文件路径为空则返回空
@@ -192,7 +192,7 @@ public class MybatisGenerate {
 	/**
 	 * 创建数据库表
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月22日
+	 * @since 2020年6月22日
 	 * @param dbName 数据库名称
 	 * @param dbUrl 数据库地址
 	 * @param dbUserName 数据库用户名称
@@ -283,11 +283,11 @@ public class MybatisGenerate {
 	/**
 	 * 开启新的数据库连接，返回SqlSession
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月22日
+	 * @since 2020年6月22日
 	 * @param url 数据库连接地址
 	 * @param userName 数据库用户名
 	 * @param password 数据库用户密码
-	 * @return
+	 * @return 
 	 */
 	public static SqlSession openSession(String url, String userName, String password) {
 		Assert.hasLength(url, "数据库连接地址不能为空");
@@ -308,9 +308,9 @@ public class MybatisGenerate {
 	/**
 	 * 获取表缓存信息
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月22日
+	 * @since 2020年6月22日
 	 * @param cls 表对象类型
-	 * @return
+	 * @return 
 	 */
 	public static TableCache getTableCache(Class<?> cls) {
 		return TableCacheUtil.getTableCache(cls);

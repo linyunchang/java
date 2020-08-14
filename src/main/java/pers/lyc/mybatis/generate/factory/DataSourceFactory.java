@@ -7,7 +7,7 @@ import org.apache.commons.dbcp2.BasicDataSource;
 /**
  * DataSource工厂类
  * @author 林运昌（linyunchang）
- * @date 2020年6月22日
+ * @since 2020年6月22日
  */
 public class DataSourceFactory {
 	
@@ -16,11 +16,11 @@ public class DataSourceFactory {
 	/**
 	 * 创建数据源
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月22日
+	 * @since 2020年6月22日
 	 * @param url 数据库地址
 	 * @param userName 数据库账号
 	 * @param password 数据库密码
-	 * @return
+	 * @return 
 	 */
 	public static DataSource createBasicDataSource(String url, String userName, String password) {
 		return createBasicDataSource(DataSourceFactory.driverClassName, url, userName, password);
@@ -29,12 +29,12 @@ public class DataSourceFactory {
 	/**
 	 * 创建数据源
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月22日
+	 * @since 2020年6月22日
 	 * @param driverClassName 数据源驱动类名
 	 * @param url 数据库地址
 	 * @param userName 数据库账号
 	 * @param password 数据库密码
-	 * @return
+	 * @return 
 	 */
 	public static DataSource createBasicDataSource(String driverClassName, String url, String userName, String password) {
 		// 创建数据源

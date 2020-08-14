@@ -7,7 +7,7 @@ import pers.lyc.mybatis.core.annotation.Related;
 /**
  * 字段关系缓存
  * @author 林运昌（linyunchang）
- * @date 2020年6月19日
+ * @since 2020年6月19日
  */
 public class RelatedCache implements Serializable {
 	private static final long serialVersionUID = 1L;

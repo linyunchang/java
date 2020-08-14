@@ -25,7 +25,7 @@ import pers.lyc.mybatis.core.cache.TableCache;
 /**
  * 表缓存工具类
  * @author 林运昌（linyunchang）
- * @date 2020年6月18日
+ * @since 2020年6月18日
  */
 public class TableCacheUtil {
 	
@@ -35,9 +35,9 @@ public class TableCacheUtil {
 	/**
 	 * 获取表信息
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月18日
+	 * @since 2020年6月18日
 	 * @param cls 表对象类型
-	 * @return
+	 * @return 
 	 */
 	public static TableCache getTableCache(Class<?> cls) {
 		Assert.notNull(cls, "表对象类型不能为空");
@@ -62,9 +62,9 @@ public class TableCacheUtil {
 	/**
 	 * 生成TableCache
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月18日
+	 * @since 2020年6月18日
 	 * @param cls 表对象类型
-	 * @return
+	 * @return 
 	 */
 	private static TableCache generateTableCache(Class<?> cls) {
 		Assert.notNull(cls, "Table Class不能为空");
@@ -157,11 +157,11 @@ public class TableCacheUtil {
 	/**
 	 * 生成ColumnCache
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月18日
+	 * @since 2020年6月18日
 	 * @param tableAliasName 表别名
 	 * @param primaryKey 表主键
 	 * @param field 表字段对应的属性
-	 * @return
+	 * @return 
 	 */
 	private static ColumnCache generateColumnCache(String tableAliasName, String primaryKey, Field field) {
 		Assert.hasLength(tableAliasName, "表别名不能为空");
@@ -304,11 +304,11 @@ public class TableCacheUtil {
 	/**
 	 * 生成JoinCache
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月18日
+	 * @since 2020年6月18日
 	 * @param tableAliasName 表别名
 	 * @param column 表字段注解
 	 * @param field 表字段对应的属性
-	 * @return
+	 * @return 
 	 */
 	private static JoinCache generateJoinCache(String tableAliasName, Column column, Field field) {
 		Assert.hasLength(tableAliasName, "表别名不能为空");
@@ -393,10 +393,10 @@ public class TableCacheUtil {
 	/**
 	 * 生成RelatedCache
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月18日
+	 * @since 2020年6月18日
 	 * @param tableCache 表缓存信息
 	 * @param relatedField 表关联字段对应的属性
-	 * @return
+	 * @return 
 	 */
 	private static RelatedCache generateRelatedCache(TableCache tableCache, Field relatedField) {
 		Assert.notNull(tableCache, "TableCache 不能为空");
@@ -515,10 +515,10 @@ public class TableCacheUtil {
 	/**
 	 * 属性字符串转换成列字符串（逗号隔开）
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月18日
+	 * @since 2020年6月18日
 	 * @param columnCacheMap 列缓存信息
 	 * @param fieldStr 属性字符串
-	 * @return
+	 * @return 
 	 */
 	private static String fieldsToColumns(Map<String, ColumnCache> columnCacheMap, String fieldStr) {
 		// 属性属性组合

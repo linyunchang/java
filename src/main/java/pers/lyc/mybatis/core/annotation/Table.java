@@ -8,7 +8,7 @@ import java.lang.annotation.Target;
 /**
  * 表注解
  * @author 林运昌（linyunchang）
- * @date 2020年6月19日
+ * @since 2020年6月19日
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)

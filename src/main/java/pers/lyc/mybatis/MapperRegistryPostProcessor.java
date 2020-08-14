@@ -11,7 +11,7 @@ import org.springframework.util.StringUtils;
 /**
  * xml存放地址注册
  * @author 林运昌（linyunchang）
- * @date 2020年6月20日
+ * @since 2020年6月20日
  */
 public class MapperRegistryPostProcessor implements BeanDefinitionRegistryPostProcessor {
 	

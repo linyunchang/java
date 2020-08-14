@@ -21,7 +21,7 @@ import pers.lyc.mybatis.util.TableCacheUtil;
 /**
  * mysql新增语句
  * @author 林运昌（linyunchang）
- * @date 2020年6月19日
+ * @since 2020年6月19日
  */
 public class MySqlInsert<T> {
 	
@@ -35,7 +35,7 @@ public class MySqlInsert<T> {
 	/**
 	 * 初始化
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 */
 	public MySqlInsert() {
 		// 判断类型
@@ -56,7 +56,7 @@ public class MySqlInsert<T> {
 	/**
 	 * 初始化
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param cls 表实体类型
 	 */
 	public MySqlInsert(Class<T> tableCls) {
@@ -68,9 +68,9 @@ public class MySqlInsert<T> {
 	/**
 	 * 自定义要新增数据的表（对应数据库的表名）
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param tableName 自定义要新增数据的表名（对应数据库的表名）
-	 * @return
+	 * @return 
 	 */
 	public MySqlInsert<T> insertInto(String tableName) {
 		Assert.hasLength(tableName, "自定义要新增数据的表不能为空");
@@ -83,9 +83,9 @@ public class MySqlInsert<T> {
 	/**
 	 * 添加数据
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param data 数据对象
-	 * @return
+	 * @return 
 	 */
 	public MySqlInsert<T> value(T data) {
 		return value(data, false);
@@ -94,10 +94,10 @@ public class MySqlInsert<T> {
 	/**
 	 * 设置数据
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param data 数据对象
 	 * @param clear 是否清除旧数据列表
-	 * @return
+	 * @return 
 	 */
 	public MySqlInsert<T> value(T data, boolean clear) {
 		Assert.notNull(data, "数据不能为空");
@@ -122,9 +122,9 @@ public class MySqlInsert<T> {
 	/**
 	 * 添加数据列表
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param dataList 数据对象列表
-	 * @return
+	 * @return 
 	 */
 	public MySqlInsert<T> values(List<T> dataList) {
 		return values(dataList, false);
@@ -133,10 +133,10 @@ public class MySqlInsert<T> {
 	/**
 	 * 设置数据列表
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param dataList 数据对象列表
 	 * @param clear 是否清除旧数据列表
-	 * @return
+	 * @return 
 	 */
 	public MySqlInsert<T> values(List<T> dataList, boolean clear) {
 		Assert.notEmpty(dataList, "数据列表不能为空");
@@ -156,9 +156,9 @@ public class MySqlInsert<T> {
 	/**
 	 * 设置默认值
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param data 数据对象
-	 * @return
+	 * @return 
 	 */
 	private Object setDefault(T data) {
 		// 当前时间
@@ -213,8 +213,8 @@ public class MySqlInsert<T> {
 	/**
 	 * 获取字段字符串
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
-	 * @return
+	 * @since 2020年6月19日
+	 * @return 
 	 */
 	private String getColums() {
 		// 获取表缓存信息
@@ -243,8 +243,8 @@ public class MySqlInsert<T> {
 	/**
 	 * 获取属性参数字符串
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
-	 * @return
+	 * @since 2020年6月19日
+	 * @return 
 	 */
 	private String getParams() {
 		// 获取表缓存信息

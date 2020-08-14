@@ -3,7 +3,7 @@ package pers.lyc.mybatis.core.enums;
 /**
  * 连接类型
  * @author 林运昌（linyunchang）
- * @date 2020年6月19日
+ * @since 2020年6月19日
  */
 public enum JoinType {
 	LEFT("left join", "左连接"), INNER("inner join", "内连接"), RIGHT("right join", "右连接"), CROSS("cross join", "交叉连接");

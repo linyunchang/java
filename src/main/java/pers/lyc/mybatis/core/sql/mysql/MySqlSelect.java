@@ -21,7 +21,7 @@ import pers.lyc.mybatis.util.TableCacheUtil;
 /**
  * mysql查询语句
  * @author 林运昌（linyunchang）
- * @date 2020年6月19日
+ * @since 2020年6月19日
  */
 public class MySqlSelect<T> extends SqlWhere {
 	/** 表实体类型 */
@@ -46,7 +46,7 @@ public class MySqlSelect<T> extends SqlWhere {
 	/**
 	 * 初始化
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 */
 	public MySqlSelect() {
 		// 判断类型
@@ -67,7 +67,7 @@ public class MySqlSelect<T> extends SqlWhere {
 	/**
 	 * 初始化
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param cls 表实体类型
 	 */
 	public MySqlSelect(Class<T> tableCls) {
@@ -79,9 +79,9 @@ public class MySqlSelect<T> extends SqlWhere {
 	/**
 	 * 设置是否去重
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param distinct 是否去重
-	 * @return
+	 * @return 
 	 */
 	public MySqlSelect<T> distinct(Boolean distinct) {
 		Assert.notNull(distinct, "是否去重不能为空");
@@ -94,9 +94,9 @@ public class MySqlSelect<T> extends SqlWhere {
 	/**
 	 * 设置要查询的属性
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field 要查询的属性
-	 * @return
+	 * @return 
 	 */
 	public MySqlSelect<T> field(String field) {
 		// 设置字段
@@ -115,9 +115,9 @@ public class MySqlSelect<T> extends SqlWhere {
 	/**
 	 * 设置要查询的属性数组
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param fields 要查询的属性数组
-	 * @return
+	 * @return 
 	 */
 	public MySqlSelect<T> fields(String[] fields) {
 		// 设置字段
@@ -138,9 +138,9 @@ public class MySqlSelect<T> extends SqlWhere {
 	/**
 	 * 自定义要查询数据的表（对应数据库的表名）
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param tableName 自定义要查询数据的表名（对应数据库的表名）
-	 * @return
+	 * @return 
 	 */
 	public MySqlSelect<T> from(String tableName) {
 		Assert.hasLength(tableName, "自定义要查询数据的表不能为空");
@@ -153,7 +153,7 @@ public class MySqlSelect<T> extends SqlWhere {
 	/**
 	 * 声明关联类型
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param joinCacheKey 关联关系缓存关键字
 	 * @param joinType 关联类型
 	 */
@@ -172,9 +172,9 @@ public class MySqlSelect<T> extends SqlWhere {
 	/**
 	 * 设置排序
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field 字段属性
-	 * @return
+	 * @return 
 	 */
 	public MySqlSelect<T> orderBy(String field) {
 		return orderBy(field, false);
@@ -183,10 +183,10 @@ public class MySqlSelect<T> extends SqlWhere {
 	/**
 	 * 设置排序
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param field 字段属性
 	 * @param desc 是否倒序
-	 * @return
+	 * @return 
 	 */
 	public MySqlSelect<T> orderBy(String field, boolean desc) {
 		Assert.hasLength(field, "字段属性不能为空");
@@ -223,10 +223,10 @@ public class MySqlSelect<T> extends SqlWhere {
 	/**
 	 * 设置查询数据数量
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param offset 数据偏移量
 	 * @param limit 查询数据条数
-	 * @return
+	 * @return 
 	 */
 	public MySqlSelect<T> limit(int offset, int limit) {
 		this.offset = offset;

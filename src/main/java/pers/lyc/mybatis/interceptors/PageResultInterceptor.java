@@ -21,7 +21,7 @@ import cn.hutool.core.util.ReflectUtil;
 /**
  * mybatis分页拦截器（将查询结果记录集保存到page中）
  * @author 林运昌（linyunchang）
- * @date 2020年6月20日
+ * @since 2020年6月20日
  */
 @Intercepts({ @Signature( type=ResultSetHandler.class, method="handleResultSets", args={Statement.class} ) })
 public class PageResultInterceptor implements Interceptor {

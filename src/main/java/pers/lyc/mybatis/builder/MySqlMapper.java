@@ -17,19 +17,18 @@ import pers.lyc.mybatis.provider.mysql.MySqlSelectSqlProvider;
 import pers.lyc.mybatis.provider.mysql.MySqlUpdateSqlProvider;
 
 /**
- * MySqlMapper，建议项目中创建一个BaseMapper继承此mapper，其他mapper继承BaseMapper。以后如果切换项目使用的数据库，直接修改BaseMapper继承的mapper即可
+ * MySqlMapper，建议项目中创建一个BaseMapper继承此mapper，其他mapper继承BaseMapper。以后如果切换项目使用的数据库，直接修改BaseMapper继承的mapper即可。请使用3.5.4以上版本的mybatis。
  * @author 林运昌（linyunchang）
- * @date 2020年6月19日
- * @notice 请使用3.5.4以上版本的mybatis
+ * @since 2020年6月19日
  */
 public interface MySqlMapper<T> extends SqlMapper {
 	
 	/**
 	 * 单条数据查询
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param sql 数据查询语句
-	 * @return
+	 * @return 
 	 */
 	@SelectProvider(type = MySqlSelectSqlProvider.class)
 	public T selectOne(MySqlSelect<T> sql);
@@ -37,9 +36,9 @@ public interface MySqlMapper<T> extends SqlMapper {
 	/**
 	 * 单字段查询
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param sql 数据查询语句
-	 * @return
+	 * @return 
 	 */
 	@SelectProvider(type = MySqlSelectSqlProvider.class)
 	public <C> List<C> selectColumn(MySqlSelect<T> sql);
@@ -47,9 +46,9 @@ public interface MySqlMapper<T> extends SqlMapper {
 	/**
 	 * 数据数量统计
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param sql 数据查询语句
-	 * @return
+	 * @return 
 	 */
 	@SelectProvider(type = MySqlSelectSqlProvider.class)
 	public int count(MySqlSelect<T> sql);
@@ -57,9 +56,9 @@ public interface MySqlMapper<T> extends SqlMapper {
 	/**
 	 * 数据列表查询
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param sql 数据查询语句
-	 * @return
+	 * @return 
 	 */
 	@SelectProvider(type = MySqlSelectSqlProvider.class)
 	public List<T> select(MySqlSelect<T> sql);
@@ -67,9 +66,9 @@ public interface MySqlMapper<T> extends SqlMapper {
 	/**
 	 * 新增数据
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param sql 数据新增语句
-	 * @return
+	 * @return 
 	 */
 	@InsertProvider(type = MySqlInsertSqlProvider.class)
 	public int insert(MySqlInsert<T> sql);
@@ -77,9 +76,9 @@ public interface MySqlMapper<T> extends SqlMapper {
 	/**
 	 * 数据更新
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param sql 数据更新语句
-	 * @return
+	 * @return 
 	 */
 	@UpdateProvider(type = MySqlUpdateSqlProvider.class)
 	public int update(MySqlUpdate<T> sql);
@@ -87,9 +86,9 @@ public interface MySqlMapper<T> extends SqlMapper {
 	/**
 	 * 数据删除
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param sql 数据删除语句
-	 * @return
+	 * @return 
 	 */
 	@DeleteProvider(type = MySqlDeleteSqlProvider.class)
 	public int delete(MySqlDelete<T> sql);

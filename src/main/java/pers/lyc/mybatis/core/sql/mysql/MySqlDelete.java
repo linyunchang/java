@@ -16,7 +16,7 @@ import pers.lyc.mybatis.util.TableCacheUtil;
 /**
  * mysql删除语句
  * @author 林运昌（linyunchang）
- * @date 2020年6月19日
+ * @since 2020年6月19日
  */
 public class MySqlDelete<T> extends SqlWhere {
 	/** 表实体类型 */
@@ -29,7 +29,7 @@ public class MySqlDelete<T> extends SqlWhere {
 	/**
 	 * 初始化
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 */
 	public MySqlDelete() {
 		// 判断类型
@@ -50,7 +50,7 @@ public class MySqlDelete<T> extends SqlWhere {
 	/**
 	 * 初始化
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param cls 表实体类型
 	 */
 	public MySqlDelete(Class<T> tableCls) {
@@ -62,9 +62,9 @@ public class MySqlDelete<T> extends SqlWhere {
 	/**
 	 * 自定义要删除数据的表（对应数据库的表名）
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月19日
+	 * @since 2020年6月19日
 	 * @param tableName 自定义要删除数据的表名（对应数据库的表名）
-	 * @return
+	 * @return 
 	 */
 	public MySqlDelete<T> from(String tableName) {
 		Assert.hasLength(tableName, "自定义要删除数据的表不能为空");

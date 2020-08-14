@@ -15,18 +15,18 @@ import pers.lyc.mybatis.util.TableCacheUtil;
 /**
  * mysql数据库表操作provider
  * @author 林运昌（linyunchang）
- * @date 2020年6月22日
+ * @since 2020年6月22日
  */
 public class MySqlTableSqlProvider extends TableSqlProvider {
 	
 	/**
 	 * 查询表字段名称
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月22日
+	 * @since 2020年6月22日
 	 * @param context ProviderContext
 	 * @param dbName 数据库名称
 	 * @param tableName 表名称
-	 * @return
+	 * @return 
 	 */
 	public static String selectTableColumn(ProviderContext context, @Param("dbName") String dbName, @Param("tableName") String tableName) {
 		Assert.hasLength(dbName, "数据库名不能为空");
@@ -47,11 +47,11 @@ public class MySqlTableSqlProvider extends TableSqlProvider {
 	/**
 	 * 查询表索引
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月22日
+	 * @since 2020年6月22日
 	 * @param context ProviderContext
 	 * @param dbName 数据库名称
 	 * @param tableName 表名称
-	 * @return
+	 * @return 
 	 */
 	public static String selectTableIndex(ProviderContext context, @Param("dbName") String dbName, @Param("tableName") String tableName) {
 		Assert.hasLength(dbName, "数据库名不能为空");
@@ -70,10 +70,10 @@ public class MySqlTableSqlProvider extends TableSqlProvider {
 	/**
 	 * 创建数据表
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月22日
+	 * @since 2020年6月22日
 	 * @param context ProviderContext
 	 * @param tableCls 表对象Class
-	 * @return
+	 * @return 
 	 */
 	public static String createTable(ProviderContext context, @Param("tableCls") Class<?> tableCls) {
 		Assert.notNull(tableCls, "表对象不能为空");
@@ -159,11 +159,11 @@ public class MySqlTableSqlProvider extends TableSqlProvider {
 	/**
 	 * 添加表字段
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月22日
+	 * @since 2020年6月22日
 	 * @param context ProviderContext
 	 * @param tableCls 表对象
 	 * @param fieldName 字段对应的属性名
-	 * @return
+	 * @return 
 	 */
 	public static String addColumn(ProviderContext context, @Param("tableCls") Class<?> tableCls, @Param("fieldName") String fieldName) {
 		Assert.notNull(tableCls, "表对象不能为空");
@@ -229,11 +229,11 @@ public class MySqlTableSqlProvider extends TableSqlProvider {
 	/**
 	 * 添加表唯一键
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月22日
+	 * @since 2020年6月22日
 	 * @param context ProviderContext
 	 * @param tableCls 表对象
 	 * @param uniqueKey 唯一键
-	 * @return
+	 * @return 
 	 */
 	public static String addUniqueKey(ProviderContext context, @Param("tableCls") Class<?> tableCls, @Param("uniqueKey") String uniqueKey) {
 		Assert.notNull(tableCls, "表对象不能为空");
@@ -258,11 +258,11 @@ public class MySqlTableSqlProvider extends TableSqlProvider {
 	/**
 	 * 添加表索引
 	 * @author 林运昌（linyunchang）
-	 * @date 2020年6月22日
+	 * @since 2020年6月22日
 	 * @param context ProviderContext
 	 * @param tableCls 表对象
 	 * @param indexKey 索引
-	 * @return
+	 * @return 
 	 */
 	public static String addIndexKey(ProviderContext context, @Param("tableCls") Class<?> tableCls, @Param("indexKey") String indexKey) {
 		Assert.notNull(tableCls, "表对象不能为空");

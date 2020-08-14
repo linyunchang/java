@@ -10,7 +10,7 @@ import pers.lyc.mybatis.core.enums.JoinType;
 /**
  * 列-表关联注解，只能配合@Column使用
  * @author 林运昌（linyunchang）
- * @date 2020年6月19日
+ * @since 2020年6月19日
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
