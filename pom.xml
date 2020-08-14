@@ -3,7 +3,7 @@
 	
 	<groupId>pers.lyc</groupId>
 	<artifactId>mybatis-lyc</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	
 	<name>mybatis-lyc</name>
@@ -28,7 +28,7 @@
 		<connection>scm:git:https://github.com/linyunchang/mybatis-lyc.git</connection>
 		<developerConnection>scm:git:https://github.com/linyunchang/mybatis-lyc.git</developerConnection>
 		<url>https://github.com/linyunchang/mybatis-lyc</url>
-		<tag>v1.0.1</tag>
+		<tag>${project.version}</tag>
 	</scm>
 
 	<inceptionYear>2020</inceptionYear>
