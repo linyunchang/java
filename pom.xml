@@ -4,26 +4,11 @@
 	
 	<groupId>lyc</groupId>
 	<artifactId>mybatis-lyc</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	
 	<name>mybatis-lyc</name>
 	<url>http://maven.apache.org</url>
-	
-	<licenses>
-		<license>
-			<name>Apache License, Version 2.0</name>
-			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-			<distribution>repo</distribution>
-		</license>
-	</licenses>
-
-	<developers>
-		<developer>
-			<name>林运昌</name>
-			<email>641683791@qq.com</email>
-		</developer>
-	</developers>
 
 	<scm>
 		<connection>scm:git:https://github.com/linyunchang/mybatis-lyc.git</connection>
@@ -31,6 +16,13 @@
 		<url>https://github.com/linyunchang/mybatis-lyc</url>
 		<tag>${project.version}</tag>
 	</scm>
+
+	<developers>
+		<developer>
+			<name>林运昌</name>
+			<email>641683791@qq.com</email>
+		</developer>
+	</developers>
 
 	<inceptionYear>2020</inceptionYear>
 	
@@ -162,12 +154,12 @@
 	
 	<distributionManagement>
 		<repository>
-				<id>rdc-releases</id>
-				<url>https://repo.rdc.aliyun.com/repository/133291-release-8ppGMb/</url>
+			<id>rdc-releases</id>
+			<url>https://repo.rdc.aliyun.com/repository/133291-release-8ppGMb/</url>
 		</repository>
 		<snapshotRepository>
-				<id>rdc-snapshots</id>
-				<url>https://repo.rdc.aliyun.com/repository/133291-snapshot-kopFHU/</url>
+			<id>rdc-snapshots</id>
+			<url>https://repo.rdc.aliyun.com/repository/133291-snapshot-kopFHU/</url>
 		</snapshotRepository>
 	</distributionManagement>
 	
