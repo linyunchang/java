@@ -52,7 +52,7 @@ public abstract class SqlWhere {
 	 * @since 2020年6月19日
 	 * @param sql 条件语句
 	 * @param field 条件语句中涉及到的属性名称
-	 * @apiNote 
+	 * @see 
 	 * 	sql： birthday is null； field：birthday<br>
 	 * 	sql： birthday is not null； field：birthday<br>
 	 */
@@ -69,7 +69,7 @@ public abstract class SqlWhere {
 	 * @param sql 条件语句
 	 * @param field 条件语句中涉及到的属性名称
 	 * @param value 条件语句中涉及到的属性的值
-	 * @apiNote 
+	 * @see 
 	 * 	sql： id = #{id}； field：id； value：1<br>
 	 * 	sql： name like concat('%', #{name},'%')； field：name； value："林运昌"<br>
 	 * 	sql： type in &lt;foreach&gt;type&lt;/foreach&gt;； field：type； value：Integer[] or List&lt;Integer&gt;<br>
@@ -98,7 +98,7 @@ public abstract class SqlWhere {
 	 * @param sql 条件语句
 	 * @param fields 条件语句中涉及到的属性名称数组
 	 * @param paramMap 条件语句中涉及到的参数值map
-	 * @apiNote 
+	 * @see 
 	 * 	sql： id = #{id}； fields：[id]； paramMap：{id:1}<br>
 	 *  sql： name like concat('%', #{name},'%')； fields：[name]； paramMap：{name:"林运昌"}<br>
 	 * 	sql： type in &lt;foreach&gt;type&lt;/foreach&gt;； fields：[type]； paramMap：{type:[1,2,3]}<br>
@@ -127,7 +127,7 @@ public abstract class SqlWhere {
 	 * @since 2020年6月19日
 	 * @param sql 条件语句
 	 * @param field field
-	 * @apiNote 
+	 * @see 
 	 * 	sql： birthday is null； field：birthday<br>
 	 * 	sql： birthday is not null； field：birthday<br>
 	 */
@@ -144,7 +144,7 @@ public abstract class SqlWhere {
 	 * @param sql 条件语句
 	 * @param field field
 	 * @param value value
-	 * @apiNote 
+	 * @see 
 	 * 	sql： id = #{id}； field：id； value：1<br>
 	 * 	sql： name like concat('%', #{name},'%')； field：name； value："you name"<br>
 	 * 	sql： type in &lt;foreach&gt;type&lt;/foreach&gt;； field：type； value：Integer[] or List&lt;Integer&gt;<br>
@@ -173,7 +173,7 @@ public abstract class SqlWhere {
 	 * @param sql 条件语句
 	 * @param fields 条件语句中涉及到的属性名称数组
 	 * @param paramMap 条件语句中涉及到的参数值map
-	 * @apiNote 
+	 * @see 
 	 * 	id = #{id} <br>
 	 * 	name like concat('%', #{name},'%') <br>
 	 * 	type in &lt;foreach&gt;type&lt;/foreach&gt; <br>
@@ -341,7 +341,7 @@ public abstract class SqlWhere {
 	}
 	
 	/** 
-	 * 限制 field >= value
+	 * 限制 field &gt;= value
 	 * @author 林运昌（linyunchang）
 	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
@@ -601,7 +601,7 @@ public abstract class SqlWhere {
 	}
 	
 	/** 
-	 * 或者 field >= value
+	 * 或者 field &gt;= value
 	 * @author 林运昌（linyunchang）
 	 * @since 2020年6月19日
 	 * @param field	表实体的属性名称
