@@ -5,7 +5,7 @@ import ${tableCache.className};
 
 /**
  * @author ${author}
- * @date ${nowDate}
+ * @since ${nowDate}
  * @comment ${tableCache.cnName}的Mapper
  */
 public interface ${tableCache.classSimpleName}Mapper extends MysqlMapper<${tableCache.classSimpleName}> {
