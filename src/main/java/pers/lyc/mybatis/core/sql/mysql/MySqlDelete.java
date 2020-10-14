@@ -27,7 +27,7 @@ public class MySqlDelete<T> extends SqlWhere {
 	private LinkedHashMap<String, JoinCache> joinCacheMap = new LinkedHashMap<>();
 	
 	/**
-	 * 初始化
+	 * 初始化 
 	 * @author 林运昌（linyunchang）
 	 * @since 2020年6月19日
 	 */
